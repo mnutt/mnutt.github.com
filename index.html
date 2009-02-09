@@ -35,7 +35,9 @@
     padding: 30px 0 0 0;
   }
 
-  #header h1 {
+  #header h1 a {
+    display: block;
+    border 0;
     margin: 0;
     width: 510px;
     height: 89px;
@@ -59,7 +61,7 @@
   color: #e7e7e7;
   opacity: 0.9;
   padding: 10px;
-  width: 900px;
+  width: 970px;
   margin-bottom: 30px;
   }
 
@@ -74,14 +76,13 @@
   }
   ul.recent_projects li {
   display: block;
-  margin: 0 0 15px 0;
+  margin: 10px 10px 15px 10px;
   }
   ul.recent_projects li img {
   display: block;
   }
   ul.recent_projects li p {
   width: 180px;
-  background-color: #EEE;
   padding: 5px;
   margin-top: 5px;
   line-height: 1.1em;
@@ -89,6 +90,53 @@
 
   ul, li{ margin: 0; padding: 0;}
 
+  .project {
+    width: 425px;
+    background-color: #E2DDCD;
+    margin: 50px 20px 20px 25px;
+    font-family: "Lucida Grande", Helvetica, sans-serif;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    behavior:url(border-radius.htc);
+    border: 0;
+    border-radius: 10px;
+    position:relative;
+  }
+
+  .project .icon {
+    width: 164px;
+    height: 164px;
+    background: url(icon-bg2.png) top left no-repeat;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+  }
+
+  .project .icon .icon_wrapper {
+    overflow: hidden;
+    width: 132px;
+    height: 132px;
+    margin: 14px 0 0 15px;
+    position: absolute;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: url(thumbs/limecast.png) top left no-repeat;
+  }
+
+  .project .title {
+    float: left;
+    margin: 115px 10px 10px;
+    width: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .project p {
+    margin-left: 120px;
+    padding: 10px 15px;
+    font-size: 0.8em;
+  }
 </style>
 
 </head>
@@ -98,15 +146,34 @@
   <div id="header">
     <h1><a href="http://nuttnet.net">from the desk of michael nutt,</a></h1>
   </div>
-
+  
   <div id="content" class="span-20">
-
+    
     <div id="intro" class="text">
       <p>Hi! My name is <a href="/about">Michael Nutt</a> and I <a href="/projects">build things</a>.  
 	I'm also working on a few <a href="/software">software projects</a>.  Occasionally I even 
 	<a href="/">write about what I do</a>. This is my portfolio.</p>
     </div>
+    
+    <div class="column span-10">
+      <div class="project">
+	<div class="icon">
+	  <div class="icon_wrapper"> </div>
+	</div>
+	
+	<div class="title">
+	  LimeCast
+	</div>
+	
+	<p>
+	  LimeCast aims to be the web's default podcasting directory.  We built it in Rails, and it does lots of fancy things behind the scenes to pull in and format just about any podcast feed you throw at it.
+	</p>
+	
+	<div style="clear: both;"> </div>
+      </div>
+    </div>
 
+    <!--
     <div class="column span-5">
       <ul class="recent_projects">
       <li>
@@ -228,8 +295,10 @@
 	<p>"What to wear?", a study in daily clothing selection</p>
       </li>
     </ul>
-</div>
+</div> -->
+
   </div>
+
 
 </body>
 </html>
