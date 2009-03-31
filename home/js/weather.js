@@ -9,7 +9,6 @@ $(document).ready(function() {
       //var tomorrow_high = result.item.forecast[1].high;
       //var tomorrow_low = result.item.forecast[1].low;
       //var tomorrow_desc = result.item.forecast[1].text;
-      //console.log(result);
       $('.weather .today .temperature').html(temperature + "&deg;");
       //$('.weather .today .high').text(today_high);
       //$('.weather .today .low').text(today_low);
@@ -35,7 +34,6 @@ $(document).ready(function() {
 	  weather_ticks.push([i - 1, time]);
 	}
       });
-      console.log(weather_ticks);
       var options = { grid: {borderWidth: 0, tickColor: "rgba(255, 255, 255, 0.5)"},
                       lines: { show: true, fill: false, lineWidth: 3},
 		      shadowSize: 0,
