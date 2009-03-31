@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <title>Home</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.date.js"></script>
+  <script type="text/javascript" src="js/jquery.flot.js"></script>
+
+  <script type="text/javascript" src="js/cufon.js"></script>
+  <script type="text/javascript" src="js/Surface.font.js"</script>
+  <script type="text/javascript">
+    Cufon.replace('h1');
+  </script>
+
+  <script type="text/javascript" src="js/date.js"></script>
+  <script type="text/javascript" src="js/weather.js"></script>
+  <script type="text/javascript" src="js/apartment_therapy.js"></script>
+  <script type="text/javascript" src="js/nytimes.js"></script>
+  <script type="text/javascript" src="http://www.nytimes.com/js/multimedia/slideshow/navData.js"></script>
+
+  <style type="text/css">
+    body {
+      background-color: #222;
+    min-width: 1300px;
+      margin-top: 0;
+    }
+
+    .weather {
+      width: 420px;
+      float: left;
+    }
+
+    .weather .today {
+      margin: 40px 0 0 10px;
+    }
+
+    .weather #weathergraph {
+      width: 300px;
+      height: 100px;
+      float: left;
+    }
+
+    .weather .temperature {
+      color: #FFF;
+      font-family: Helvetica;
+      font-size: 3.5em;
+      padding-top: 10px;
+    }
+
+    ul, li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .apartment_therapy ul li {
+      float: left;
+    }
+    .nytimes ul li {
+      float: left;
+    }
+    .nytimes ul li img {
+      border: 0;
+    }
+
+    ul li .thumb {
+      width: 300px;
+      height: 300px;
+      margin: 5px;
+    }
+
+    h1 {
+      font-style: italic;
+      color: #FFF;
+      font-size: 8em;
+      margin: 0;
+      padding: 0;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Monday, March 30</h1>
+
+  <div class="weather">
+    <div class="today">
+      <div class="high"></div>
+      <div class="low"></div>
+      <span class="icon"></span>
+      <div id="weathergraph"></div>
+      <div class="temperature"></div>
+    </div>
+    <div class="tomorrow">
+      <div class="high"></div>
+      <div class="low"></div>
+      <div class="desc"></div>
+    </div>
+  </div>
+  <div style="clear: both">&nbsp;</div>
+
+  <div class="apartment_therapy">
+    <ul>
+    </ul>
+  </div>
+  
+  <div class="nytimes">
+    <ul>
+    </ul>
+  </div>
+</body>
+
+</html>
